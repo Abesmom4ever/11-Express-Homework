@@ -6,6 +6,8 @@ router.get("/notes", (req, res) => {
 });
 
 //Will serve the homepage
-// router.get()
+router.get("/homepage", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+});
 
 module.exports = router;
